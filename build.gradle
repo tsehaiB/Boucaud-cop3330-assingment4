@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
 group 'oop.assignments'
@@ -8,7 +10,14 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+javafx {
+    version = "16"
+    modules =[ 'javafx.controls', 'javafx.fxml' ]
+}
 
+application {
+    mainClass = 'ucf.assignments.ToDoListManager'
+}
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
@@ -17,3 +26,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
