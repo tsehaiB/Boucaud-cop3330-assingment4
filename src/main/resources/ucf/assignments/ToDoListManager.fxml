@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListManager">
+    <top>
+      <ButtonBar prefHeight="40.0" prefWidth="1010.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <Button fx:id="SaveButton" mnemonicParsing="false" onAction="#SaveToPath" text="Save" />
+            <TextField fx:id="SavePath" promptText="Enter Path and Click Save" />
+            <Button fx:id="LoadButton" mnemonicParsing="false" onAction="#LoadFromPath" text="Load" />
+            <TextField fx:id="LoadPath" promptText="Enter Path and Click Load" />
+            <Button fx:id="NewListButton" mnemonicParsing="false" onAction="#CreateList" text="New" />
+            <TextField fx:id="ListTitle" minWidth="44.0" prefHeight="28.0" prefWidth="348.0" promptText="Enter Title and Click New" />
+        </buttons>
+          <BorderPane.margin>
+              <Insets right="20.0" />
+          </BorderPane.margin>
+      </ButtonBar>
+   </top>
+</BorderPane>
