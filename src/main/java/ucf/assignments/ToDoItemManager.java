@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Tsehai Boucaud
+ */
+
 package ucf.assignments;
 
 import javafx.event.ActionEvent;
@@ -107,6 +112,15 @@ public class ToDoItemManager {
     }
     public void listTitleChanged(ActionEvent actionEvent) {
         //set title instance variable equal to listTitle TextField value
+    }
+    public ToDoListItem createItem(){
+        ToDoListItem item = new ToDoListItem();
+        //create new ToDoList Item 'item'
+        //set item.title to ""
+        //set item.description to ""
+        //set item.CompletionStatus to false
+        //set item.dueDate to LocalDate.now()
+        return item;
     }
     public void showItems(){
         //for each item in display items
